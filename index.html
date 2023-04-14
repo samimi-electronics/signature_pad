@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signature pad App</title>
+  <style>
+    .signature-pad {
+      border: 1px solid #e2e2e2;
+      border-radius: 10px;
+      width: 500px;
+      height: 300px;
+      cursor: crosshair;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <form action="#" method="post">
+      <div>
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name">
+      </div>
+      <div>
+        <label for="name">Signature:</label><br>
+        <canvas width="500" height="300" class="signature-pad"></canvas>
+      </div>
+      <div>
+        <button type="button" id="clear-signature-pad-btn">Clear signature</button>
+        <button type="submit" id="submit-signature-btn">Submit signature</button>
+      </div>
+    </form>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
